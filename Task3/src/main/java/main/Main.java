@@ -22,7 +22,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         DBServiceImpl dbService = new DBServiceImpl();
         dbService.create();
-        //dbService.check();
+        dbService.check();
 
         AccountService accountService = new AccountService(dbService);
 
